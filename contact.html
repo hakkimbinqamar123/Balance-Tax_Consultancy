@@ -22,102 +22,47 @@
             font-family: "Playfair Display", serif;
         }
     </style>
-
 </head>
 
 <body class="bg-slate-950 text-white">
 
     <!-- ================= HEADER ================= -->
-    <header class="absolute top-0 w-full z-30 animate-fade-down">
-  <div class="max-w-7xl mx-auto px-6 py-5">
+    <header class="absolute top-0 w-full z-30">
+        <div class="max-w-7xl mx-auto px-6 py-5">
+            <div class="flex items-center justify-between">
 
-    <div class="flex items-center justify-between">
-
-      <!-- LOGO -->
-      <div class="flex items-center gap-3 text-white">
-        <img src="./Images/logo.jpeg" class="h-10 w-auto" />
-
-        <div>
-          <div class="text-2xl font-extrabold tracking-widest">
-            BALANCE
-          </div>
-          <div class="text-xs text-slate-300 -mt-1">
-            ACCOUNTING & TAX CONSULTANCY
-          </div>
-        </div>
-      </div>
-
-      <!-- DESKTOP NAV -->
-      <nav class="hidden md:flex items-center gap-10 text-slate-200 text-sm font-medium">
-        <a class="border-b border-white pb-1" href="./Index.html">Home</a>
-        <a class="hover:text-white" href="./AboutUs.html">About Us</a>
-        <a class="hover:text-white" href="./service.html">Services</a>
-        <a class="hover:text-white" href="./Contact.html">Contact</a>
-      </nav>
-
-      <!-- CTA DESKTOP -->
-      <button class="hidden md:block border border-white/60 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-white hover:text-slate-900 transition">
-        Get a Consultation
-      </button>
-
-      <!-- MOBILE MENU BUTTON -->
-      <button onclick="toggleMenu()" class="md:hidden text-white text-3xl">
-        ☰
-      </button>
-
-    </div>
-
-    <!-- MOBILE NAV -->
-    <div id="mobileMenu" class="hidden md:hidden mt-6 bg-slate-900/95 rounded-xl p-6 space-y-4 text-slate-200 text-sm font-medium">
-
-      <a class="block hover:text-white" href="./Index.html">Home</a>
-      <a class="block hover:text-white" href="./AboutUs.html">About Us</a>
-      <a class="block hover:text-white" href="./service.html">Services</a>
-      <a class="block hover:text-white" href="./Contact.html">Contact</a>
-
-      <button class="w-full border border-white/60 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-white hover:text-slate-900 transition">
-        Get a Consultation
-      </button>
-
-    </div>
-
-  </div>
-</header>
-
-
-    <!-- ================= HERO ================= -->
-    <section class="relative py-24">
-<header class="absolute top-0 w-full z-30 animate-fade-down">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
-
-            <!-- LOGO + BRAND -->
-            <div class="flex items-center gap-3 text-white">
-                <img src="./Images/logo.jpeg" alt="Balance Logo" class="h-10 w-auto" />
-
-                <div>
-                    <div class="text-2xl font-extrabold tracking-widest">
-                        BALANCE
-                    </div>
-                    <div class="text-xs text-slate-300 -mt-1">
-                        ACCOUNTING & TAX CONSULTANCY
+                <div class="flex items-center gap-3 text-white">
+                    <img src="./Images/logo.jpeg" class="h-10 w-auto" />
+                    <div>
+                        <div class="text-2xl font-extrabold tracking-widest">BALANCE</div>
+                        <div class="text-xs text-slate-300 -mt-1">
+                            ACCOUNTING & TAX CONSULTANCY
+                        </div>
                     </div>
                 </div>
+
+                <nav class="hidden md:flex items-center gap-10 text-slate-200 text-sm font-medium">
+                    <a class="border-b border-white pb-1" href="./Index.html">Home</a>
+                    <a class="hover:text-white" href="./AboutUs.html">About Us</a>
+                    <a class="hover:text-white" href="./service.html">Services</a>
+                    <a class="hover:text-white" href="./Contact.html">Contact</a>
+                </nav>
+
+                <button
+                    class="hidden md:block border border-white/60 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-white hover:text-slate-900 transition">
+                    Get a Consultation
+                </button>
+
+                <button onclick="toggleMenu()" class="md:hidden text-white text-3xl">☰</button>
             </div>
 
-            <!-- NAV -->
-            <nav class="hidden md:flex items-center gap-10 text-slate-200 text-sm font-medium">
-                <a class="nav-link border-b border-white pb-1" href="./Index.html">Home</a>
-                <a class="nav-link hover:text-white" href="./AboutUs.html">About Us</a>
-                <a class="nav-link hover:text-white" href="./service.html">Services</a>
-                <a class="nav-link hover:text-white" href="./">Contact</a>
-            </nav>
-
-            <!-- CTA -->
-            <button class="btn-lift border border-white/60 text-white px-5 py-2 rounded-lg text-sm font-medium
-             hover:bg-white hover:text-slate-900 transition">
-                Get a Consultation
-            </button>
-
+            <div id="mobileMenu"
+                class="hidden md:hidden mt-6 bg-slate-900/95 rounded-xl p-6 space-y-4 text-slate-200 text-sm font-medium">
+                <a class="block hover:text-white" href="./Index.html">Home</a>
+                <a class="block hover:text-white" href="./AboutUs.html">About Us</a>
+                <a class="block hover:text-white" href="./service.html">Services</a>
+                <a class="block hover:text-white" href="./Contact.html">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -125,48 +70,53 @@
     <section class="py-24">
         <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
 
-            <!-- Contact Info -->
+            <!-- LEFT SIDE -->
             <div class="space-y-10">
 
-                <h2 class="font-hero text-3xl mb-6">Get in Touch</h2>
+                <!-- Top Image -->
+                <img src="./Images/Website(25).jpeg"
+                    class="rounded-2xl w-full h-72 object-fit border border-slate-800">
 
-                <div class="space-y-6 text-slate-300">
+                <div>
+                    <h2 class="font-hero text-3xl mb-6">Get in Touch</h2>
 
-                    <div>
-                        <p class="text-slate-500 text-sm">Email</p>
-                        <a href="mailto:info@balancellc.ae" class="text-lg hover:text-white transition">
-                            info@balancellc.ae
-                        </a>
+                    <div class="space-y-6 text-slate-300">
+
+                        <div>
+                            <p class="text-slate-500 text-sm">Email</p>
+                            <a href="mailto:info@balancellc.ae" class="text-lg hover:text-white transition">
+                                info@balancellc.ae
+                            </a>
+                        </div>
+
+                        <div>
+                            <p class="text-slate-500 text-sm">Office Address</p>
+                            <p class="text-lg leading-relaxed">
+                                Smart Station, First Floor<br>
+                                Incubator Building<br>
+                                Masdar City, Abu Dhabi<br>
+                                United Arab Emirates
+                            </p>
+                        </div>
+
+                        <div>
+                            <a href="https://maps.app.goo.gl/iJtABtNNUqx5KDLe6?g_st=iw" target="_blank"
+                                class="inline-block mt-3 border border-white/60 px-6 py-3 rounded-lg hover:bg-white hover:text-slate-900 transition">
+                                View Location on Map
+                            </a>
+                        </div>
                     </div>
-
-                    <div>
-                        <p class="text-slate-500 text-sm">Office Address</p>
-                        <p class="text-lg leading-relaxed">
-                            Smart Station, First Floor<br>
-                            Incubator Building<br>
-                            Masdar City, Abu Dhabi<br>
-                            United Arab Emirates
-                        </p>
-                    </div>
-
-                    <div>
-                        <a href="https://maps.app.goo.gl/iJtABtNNUqx5KDLe6?g_st=iw" target="_blank"
-                            class="inline-block mt-3 border border-white/60 px-6 py-3 rounded-lg hover:bg-white hover:text-slate-900 transition">
-                            View Location on Map
-                        </a>
-                    </div>
-
                 </div>
+
+               
 
             </div>
 
-            <!-- Contact Form -->
+            <!-- RIGHT SIDE FORM -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-10">
-
                 <h3 class="font-hero text-2xl mb-8">Send a Message</h3>
 
                 <form class="space-y-6">
-
                     <div>
                         <label class="text-sm text-slate-400">Full Name</label>
                         <input type="text"
@@ -195,9 +145,7 @@
                         class="w-full border border-white/70 py-4 rounded-xl text-lg hover:bg-white hover:text-slate-900 transition">
                         Send Message
                     </button>
-
                 </form>
-
             </div>
 
         </div>
@@ -296,12 +244,12 @@
         </div>
 
     </footer>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+    </script>
 
 </body>
 
